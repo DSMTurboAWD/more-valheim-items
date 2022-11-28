@@ -7,9 +7,9 @@
     <ProjectGuid>{DEAF4438-8089-40ED-8175-398E1261D45B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JotunnModStub</RootNamespace>
-    <AssemblyName>JotunnModStub</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RootNamespace>ExtraItemsEpicLoot</RootNamespace>
+    <AssemblyName>ExtraItemsEpicLoot</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
@@ -48,6 +48,13 @@
     <Reference Include="0Harmony, Version=2.9.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\HarmonyX.2.9.0\lib\net45\0Harmony.dll</HintPath>
     </Reference>
+    <Reference Include="BepInEx, Version=5.4.19.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AppData\Roaming\r2modmanPlus-local\Valheim\profiles\Default\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendedItemDataFramework">
+      <HintPath>..\..\..\..\AppData\Roaming\r2modmanPlus-local\Valheim\profiles\Default\BepInEx\plugins\ExtendedItemDataFramework\ExtendedItemDataFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Jotunn, Version=2.7.9.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\JotunnLib.2.7.9\lib\net462\Jotunn.dll</HintPath>
     </Reference>
@@ -81,6 +88,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExtraItemInitializer.cs" />
     <Compile Include="Properties\IgnoreAccessModifiers.cs" />
     <Compile Include="JotunnModStub.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

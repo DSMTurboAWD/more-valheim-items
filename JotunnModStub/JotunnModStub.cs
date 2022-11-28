@@ -8,15 +8,15 @@ using BepInEx;
 using Jotunn.Entities;
 using Jotunn.Managers;
 
-namespace JotunnModStub
+namespace ExtraItems
 {
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
-    [BepInDependency(Jotunn.Main.ModGuid)]
+    [BepInDependency(Jotunn.Main.ModGuid, "randyknapp.mods.extendeditemdataframework")]
     //[NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Minor)]
-    internal class JotunnModStub : BaseUnityPlugin
+    public class ExtraItems : BaseUnityPlugin
     {
-        public const string PluginGUID = "com.jotunn.jotunnmodstub";
-        public const string PluginName = "JotunnModStub";
+        public const string PluginGUID = "com.jotunn.more-legendaries";
+        public const string PluginName = "Turbo's Extra Legendaries";
         public const string PluginVersion = "0.0.1";
         
         // Use this class to add your own localization to the game
